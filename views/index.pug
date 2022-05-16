@@ -1,0 +1,55 @@
+doctype html 
+html
+    head 
+      style 
+        include ../static/style.css 
+    body 
+      nav#navbar.to 
+           ul 
+                div#logo 
+                    img(src="/static/img/logo.png")
+                    | DA
+                li #[a(href="/") Home] 
+                li #[a(href="/") About]
+                li #[a(href="/") Class Info]
+                li #[a(href="/") Services] 
+                li #[a(href="/") Contact us]
+
+      section#introSection 
+          div Welcome to the Dance Academy 
+          div.small Eat Sleep Dance Repeat
+      section#missionSection 
+          h2 Our mission    
+          div.card 
+            h4 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src='/static/img/1.png')
+                div.card-content
+                    p This is the best dance academy of the universe
+          div.card 
+            h4 Dance the way you Like
+            div.card-box
+                div.card-img
+                    img(src='/static/img/2.png')
+                div.card-content
+                    p This is the best dance academy of the universe
+          div.card 
+            h4 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src='/static/img/3.png')
+                div.card-content
+                    p This is the best dance academy of the universe
+      section#sponsorsSection 
+          h2 Our sponsors
+          div#sponsors 
+            img(src='/static/img/logo1.png',alt ="Sponsor Image",class="spImage")
+            img(src='/static/img/logo2.png',alt ="Sponsor Image",class="spImage")
+            img(src='/static/img/logo3.png',alt ="Sponsor Image",class="spImage")
+            img(src='/static/img/logo4.png',alt ="Sponsor Image",class="spImage")
+
+      footer#footer 
+          | Copyright 2018 Dancer. All rights reserved 
+      script 
+        include ../static/index.js
