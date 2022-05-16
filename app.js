@@ -48,5 +48,6 @@ app.post('/contact',(req,res)=>{
     }).catch(()=>res.status(400).send("Item was not saved to the database"));
    // res.status(200).render('contact.pug');
 })
+
 //Start the server
 app.listen(port ,()=>{console.log(`The application started successfully on port ${port}`)});
